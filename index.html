@@ -20,17 +20,9 @@
     text-align: center;
     margin-bottom: 30px;
   }
-  .logo-area h1 {
-    color: #1a3560;
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 1px;
-  }
-  .logo-area p {
-    color: #555;
-    font-size: 14px;
-    margin-top: 4px;
-  }
+  .logo-area img { height: 90px; margin-bottom: 8px; }
+  .logo-area h1 { color: #1a3560; font-size: 26px; font-weight: 700; letter-spacing: 1px; }
+  .logo-area p { color: #555; font-size: 14px; margin-top: 4px; }
   .card {
     background: white;
     border-radius: 12px;
@@ -39,132 +31,75 @@
     width: 100%;
     max-width: 480px;
   }
-  .card h2 {
-    color: #1a3560;
-    font-size: 18px;
-    margin-bottom: 8px;
-  }
-  .card p {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 24px;
-  }
-  label {
-    display: block;
-    font-size: 13px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 6px;
-  }
+  .card h2 { color: #1a3560; font-size: 18px; margin-bottom: 8px; }
+  .card p { color: #666; font-size: 14px; margin-bottom: 24px; }
+  label { display: block; font-size: 13px; font-weight: 600; color: #333; margin-bottom: 6px; }
   input[type="text"] {
-    width: 100%;
-    padding: 12px 16px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: border 0.2s;
-    outline: none;
+    width: 100%; padding: 12px 16px;
+    border: 2px solid #ddd; border-radius: 8px;
+    font-size: 16px; letter-spacing: 1px;
+    text-transform: uppercase; transition: border 0.2s; outline: none;
   }
   input[type="text"]:focus { border-color: #1a3560; }
   button {
-    width: 100%;
-    padding: 13px;
-    background: #1a3560;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 16px;
-    transition: background 0.2s;
+    width: 100%; padding: 13px;
+    background: #1a3560; color: white;
+    border: none; border-radius: 8px;
+    font-size: 16px; font-weight: 600;
+    cursor: pointer; margin-top: 16px; transition: background 0.2s;
   }
   button:hover { background: #254a85; }
   button:disabled { background: #aaa; cursor: not-allowed; }
-
-  /* Resultados */
   .results { margin-top: 28px; }
   .results h3 { color: #1a3560; font-size: 15px; margin-bottom: 12px; }
   .doc-item {
-    display: flex;
-    align-items: center;
+    display: flex; align-items: center;
     justify-content: space-between;
-    padding: 14px 16px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    background: #fafafa;
+    padding: 14px 16px; border: 1px solid #e0e0e0;
+    border-radius: 8px; margin-bottom: 10px; background: #fafafa;
   }
   .doc-info { display: flex; align-items: center; gap: 12px; }
   .doc-icon { font-size: 28px; }
   .doc-name { font-size: 14px; font-weight: 600; color: #333; }
   .doc-sub { font-size: 12px; color: #888; margin-top: 2px; }
   .btn-download {
-    width: auto;
-    padding: 8px 16px;
-    font-size: 13px;
-    margin-top: 0;
-    border-radius: 6px;
-    background: #1a7a4a;
-    white-space: nowrap;
+    width: auto; padding: 8px 16px; font-size: 13px;
+    margin-top: 0; border-radius: 6px; background: #1a7a4a; white-space: nowrap;
   }
   .btn-download:hover { background: #22994f; }
-
   .msg-error {
-    background: #fff0f0;
-    border: 1px solid #ffcccc;
-    color: #c0392b;
-    border-radius: 8px;
-    padding: 14px 16px;
-    font-size: 14px;
-    margin-top: 20px;
-    text-align: center;
+    background: #fff0f0; border: 1px solid #ffcccc;
+    color: #c0392b; border-radius: 8px;
+    padding: 14px 16px; font-size: 14px;
+    margin-top: 20px; text-align: center;
   }
   .msg-loading {
-    text-align: center;
-    color: #888;
-    font-size: 14px;
-    margin-top: 20px;
-    padding: 20px;
+    text-align: center; color: #888;
+    font-size: 14px; margin-top: 20px; padding: 20px;
   }
   .spinner {
-    display: inline-block;
-    width: 20px; height: 20px;
-    border: 3px solid #ddd;
-    border-top-color: #1a3560;
-    border-radius: 50%;
-    animation: spin 0.8s linear infinite;
-    margin-right: 8px;
-    vertical-align: middle;
+    display: inline-block; width: 20px; height: 20px;
+    border: 3px solid #ddd; border-top-color: #1a3560;
+    border-radius: 50%; animation: spin 0.8s linear infinite;
+    margin-right: 8px; vertical-align: middle;
   }
   @keyframes spin { to { transform: rotate(360deg); } }
-
-  .footer {
-    margin-top: 30px;
-    color: #aaa;
-    font-size: 12px;
-    text-align: center;
-  }
+  .footer { margin-top: 30px; color: #aaa; font-size: 12px; text-align: center; }
 </style>
 </head>
 <body>
 
 <div class="logo-area">
-  <img src="logotca.png" alt="TC Asesores" style="height:90px; margin-bottom:8px;">
-  <h1>TC Asesores</h1>
+  <img src="logotca.png" alt="TC Asesores">
   <p>Tinoco Contreras Asesores</p>
 </div>
 
 <div class="card">
   <h2>Consulta tus documentos fiscales</h2>
   <p>Ingresa tu RFC para descargar tu Constancia de Situación Fiscal y opinión 32-D.</p>
-
   <label for="rfc">RFC</label>
   <input type="text" id="rfc" placeholder="Ej. AAR160217V85" maxlength="13" />
   <button id="btnBuscar" onclick="buscar()">Buscar documentos</button>
-
   <div id="resultado"></div>
 </div>
 
@@ -193,7 +128,6 @@ async function buscar() {
   btn.disabled = true;
 
   try {
-    // Buscar carpeta del cliente por nombre exacto (RFC)
     const urlCarpeta = `https://www.googleapis.com/drive/v3/files?q='${CARPETA_RAIZ}'+in+parents+and+name='${rfc}'+and+mimeType='application/vnd.google-apps.folder'+and+trashed=false&key=${API_KEY}&fields=files(id,name)`;
     const resCarpeta = await fetch(urlCarpeta);
     const dataCarpeta = await resCarpeta.json();
@@ -205,51 +139,43 @@ async function buscar() {
     }
 
     const carpetaCliente = dataCarpeta.files[0];
-
-    // Buscar archivos PDF dentro de la carpeta del cliente (recursivo en subcarpetas)
     const urlArchivos = `https://www.googleapis.com/drive/v3/files?q='${carpetaCliente.id}'+in+parents+and+mimeType='application/pdf'+and+trashed=false&key=${API_KEY}&fields=files(id,name,size,modifiedTime)`;
     let resArchivos = await fetch(urlArchivos);
     let dataArchivos = await resArchivos.json();
     let archivos = dataArchivos.files || [];
 
-    // Si no hay PDFs directamente, buscar en subcarpetas
     if (archivos.length === 0) {
       const urlSubs = `https://www.googleapis.com/drive/v3/files?q='${carpetaCliente.id}'+in+parents+and+mimeType='application/vnd.google-apps.folder'+and+trashed=false&key=${API_KEY}&fields=files(id,name)`;
       const resSubs = await fetch(urlSubs);
       const dataSubs = await resSubs.json();
-
       for (const sub of (dataSubs.files || [])) {
-        const urlSubArchivos = `https://www.googleapis.com/drive/v3/files?q='${sub.id}'+in+parents+and+mimeType='application/pdf'+and+trashed=false&key=${API_KEY}&fields=files(id,name,size,modifiedTime)`;
-        const resSubArchivos = await fetch(urlSubArchivos);
-        const dataSubArchivos = await resSubArchivos.json();
-        archivos = archivos.concat(dataSubArchivos.files || []);
+        const urlSub = `https://www.googleapis.com/drive/v3/files?q='${sub.id}'+in+parents+and+mimeType='application/pdf'+and+trashed=false&key=${API_KEY}&fields=files(id,name,size,modifiedTime)`;
+        const resSub = await fetch(urlSub);
+        const dataSub = await resSub.json();
+        archivos = archivos.concat(dataSub.files || []);
       }
     }
 
-    // Filtrar solo constancia y 32D
     const palabrasClave = ["constancia", "csf", "32d", "32-d", "opinion", "opinión"];
-    const filtrados = archivos.filter(f =>
-      palabrasClave.some(p => f.name.toLowerCase().includes(p))
-    );
-
+    const filtrados = archivos.filter(f => palabrasClave.some(p => f.name.toLowerCase().includes(p)));
     const mostrar = filtrados.length > 0 ? filtrados : archivos;
 
     if (mostrar.length === 0) {
-      resultado.innerHTML = `<div class="msg-error">⚠️ Se encontró la carpeta de <strong>${rfc}</strong> pero no hay documentos disponibles aún.<br><br>Contacta a TCA para más información.</div>`;
+      resultado.innerHTML = `<div class="msg-error">⚠️ Se encontró la carpeta de <strong>${rfc}</strong> pero no hay documentos disponibles aún.</div>`;
       btn.disabled = false;
       return;
     }
 
-    function nombreAmigable(nombre) {
-      const n = nombre.toLowerCase();
+    function nombreAmigable(n) {
+      n = n.toLowerCase();
       if (n.includes("constancia") || n.includes("csf")) return "Constancia de Situación Fiscal";
       if (n.includes("32d") || n.includes("32-d") || n.includes("opinion") || n.includes("opinión")) return "Opinión de Cumplimiento 32-D";
-      return nombre.replace(/\.[^/.]+$/, "");
+      return n.replace(/\.[^/.]+$/, "");
     }
 
-    function icono(nombre) {
-      const n = nombre.toLowerCase();
-      if (n.includes("constancia")) return "📄";
+    function icono(n) {
+      n = n.toLowerCase();
+      if (n.includes("constancia") || n.includes("csf")) return "📄";
       if (n.includes("32d") || n.includes("32-d")) return "✅";
       return "📎";
     }
@@ -278,7 +204,6 @@ async function buscar() {
     resultado.innerHTML = `<div class="msg-error">❌ Error al conectar con Google Drive. Intenta más tarde.</div>`;
     console.error(err);
   }
-
   btn.disabled = false;
 }
 
